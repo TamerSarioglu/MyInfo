@@ -1,26 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activities.GeneralActvity"
-    android:id="@+id/gen_lin_lay">
+    tools:context=".Activities.SimActivity">
 
     <View
-        android:id="@+id/view_left"
         android:layout_width="4dp"
         android:layout_height="match_parent"
         android:background="@color/colorPrimaryDark"/>
 
     <ListView
-        android:id="@+id/generaList"
+        android:id="@+id/simListView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_toEndOf="@+id/view_left"
-        android:layout_toRightOf="@+id/view_left">
+        android:layout_height="match_parent"/>
 
-    </ListView>
 
-</RelativeLayout>
+
+</LinearLayout>

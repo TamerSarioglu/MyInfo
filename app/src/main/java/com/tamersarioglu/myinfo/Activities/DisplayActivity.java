@@ -1,4 +1,4 @@
-package com.tamersarioglu.myinfo;
+package com.tamersarioglu.myinfo.Activities;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -18,6 +18,8 @@ import android.view.WindowManager;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
+
+import com.tamersarioglu.myinfo.R;
 
 import java.text.NumberFormat;
 

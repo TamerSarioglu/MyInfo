@@ -12,6 +12,17 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.tamersarioglu.myinfo.Activities.BatteryActivity;
+import com.tamersarioglu.myinfo.Activities.CpuActivity;
+import com.tamersarioglu.myinfo.Activities.DeviceIDActivity;
+import com.tamersarioglu.myinfo.Activities.DisplayActivity;
+import com.tamersarioglu.myinfo.Activities.GeneralActvity;
+import com.tamersarioglu.myinfo.Activities.MemoryActivity;
+import com.tamersarioglu.myinfo.Activities.SensorsActivity;
+import com.tamersarioglu.myinfo.Activities.SimActivity;
+import com.tamersarioglu.myinfo.Activities.SystemAppsActivity;
+import com.tamersarioglu.myinfo.Activities.UserAppsActivity;
+
 import java.util.ArrayList;
 
 public class MyAdapter extends RecyclerView.Adapter<MyHolder> implements Filterable {
@@ -67,31 +78,45 @@ public class MyAdapter extends RecyclerView.Adapter<MyHolder> implements Filtera
                 }
                 //Battery
                 if (models.get(pos).getName().equals("Battery")) {
-                    Toast.makeText(c, "Battery", Toast.LENGTH_SHORT).show();
+                    //start Battery activity on click
+                    Intent intent = new Intent(c, BatteryActivity.class);
+                    c.startActivity(intent);
                 }
                 //User Apps
                 if (models.get(pos).getName().equals("User Apps")) {
-                    Toast.makeText(c, "User Apps", Toast.LENGTH_SHORT).show();
+                    //start UserApps activity on click
+                    Intent intent = new Intent(c, UserAppsActivity.class);
+                    c.startActivity(intent);
                 }
                 //System Apps
                 if (models.get(pos).getName().equals("System Apps")) {
-                    Toast.makeText(c, "System Apps", Toast.LENGTH_SHORT).show();
+                    //start SystemApps activity on click
+                    Intent intent = new Intent(c, SystemAppsActivity.class);
+                    c.startActivity(intent);
                 }
                 //Memory
                 if (models.get(pos).getName().equals("Memory")) {
-                    Toast.makeText(c, "Memory", Toast.LENGTH_SHORT).show();
+                    //start Memory activity on click
+                    Intent intent = new Intent(c, MemoryActivity.class);
+                    c.startActivity(intent);
                 }
                 //CPU
                 if (models.get(pos).getName().equals("CPU")) {
-                    Toast.makeText(c, "CPU", Toast.LENGTH_SHORT).show();
+                    //start CPU activity on click
+                    Intent intent = new Intent(c, CpuActivity.class);
+                    c.startActivity(intent);
                 }
                 //Sensors
                 if (models.get(pos).getName().equals("Sensors")) {
-                    Toast.makeText(c, "Sensors", Toast.LENGTH_SHORT).show();
+                    //start Sensors activity on click
+                    Intent intent = new Intent(c, SensorsActivity.class);
+                    c.startActivity(intent);
                 }
                 //SIM
                 if (models.get(pos).getName().equals("SIM")) {
-                    Toast.makeText(c, "SIM", Toast.LENGTH_SHORT).show();
+                    //start SIM activity on click
+                    Intent intent = new Intent(c, SimActivity.class);
+                    c.startActivity(intent);
                 }
             }
         });
